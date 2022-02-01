@@ -1,0 +1,39 @@
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/code.jpg");
+    background-size: cover;
+    position: relative;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.titulo {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1em;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+.titulo img {
+    width: 40%;
+}
+.titulo p {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+header nav {
+    position: absolute;
+    grid-row: 1/1;
+}
+section {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+section article {
+    padding: 50px;
+}

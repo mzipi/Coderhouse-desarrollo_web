@@ -1,0 +1,13 @@
+body {
+    grid-template-rows: 5vh 85vh 10vh;
+}    
+main section {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    padding: 50px;
+}
+main section form {
+    display: grid;
+    grid-template-rows: 20px 20px 100px 20px;
+    grid-template-columns: 100px 300px;
+}
