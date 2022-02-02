@@ -14,9 +14,14 @@ header {
     background-color: #2f2f2f;
     position: fixed;
 }
+@keyframes myAnimation {
+    0%   {background-color: none;}
+    100% {background-color:#2f2f2f;}
+}
 header > nav {
     grid-column: 2/2;
     justify-self: right;
+    animation: myAnimation 2s linear infinite alternate;
 }
 header > nav > ul {
     list-style: none;
@@ -70,7 +75,6 @@ footer {
     grid-row: 1/2;
     position: fixed;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.24);
     height: 35px;
 }
 .titulo {
