@@ -3,49 +3,88 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="../styles/styles.css">
         <title>Trabajos</title>
     </head>
-    <body>
+    <body class="bg-secondary">
         <header>
-            <a href="../index.html" class="logo">
-                <img src="../images/logo MZ.jpg" alt="logo alt">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../html/blog.html">BLOG</a></li>
-                    <li><a href="../html/news.html">NOTICIAS</a></li>
-                    <li><a href="../html/jobs.html">TRABAJOS</a></li>
-                    <li><a href="../html/contact.html">CONTACTO</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand">
+                        <img src="../images/logo 2 blanco.png" alt="logo 2">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="../index.html" class="nav-link text-light">INICIO</a></li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link text-light">BLOG</a></li>
+                            <li class="nav-item"><a href="news.html" class="nav-link text-light">NOTICIAS</a></li>
+                            <li class="nav-item"><a href="jobs.html" class="nav-link text-light" aria-current="page">TRABAJOS</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link text-light">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <main>
-            <section class="tiles">
-                <h2>Jobs</h2>
-                <article>
-                    <div class="image">
-                        <img src="../images/diego-gennaro-RSvJQ-IP_pk-unsplash.jpg" alt="card1">
+        <main class="m-auto">
+            <section class="bg-white p-5 border-start border-end row">
+                <h1 class="text-primary">Trabajos</h1>
+                    <div class="cards d-flex">
+                        <article class="col mb-3">    
+                            <div class="card">
+                                <img src="../images/diego-gennaro-RSvJQ-IP_pk-unsplash.jpg" class="card-img-top" alt="card1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trabajo 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sit consequatur corrupti illo quia sequi esse? Expedita eaque, deserunt at aliquid consequuntur blanditiis praesentium, ullam exercitationem quis esse, non atque.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col mb-3">
+                            <div class="card">
+                                <img src="../images/clement-helardot-95YRwf6CNw8-unsplash.jpg" class="card-img-top" alt="card2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trabajo 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sit consequatur corrupti illo quia sequi esse? Expedita eaque, deserunt at aliquid consequuntur blanditiis praesentium, ullam exercitationem quis esse, non atque.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <h3>Job 1</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sit consequatur corrupti illo quia sequi esse? Expedita eaque, deserunt at aliquid consequuntur blanditiis praesentium, ullam exercitationem quis esse, non atque.
-                    </p>
-                </article>
-                <article>
-                    <div class="image">
-                        <img src="../images/diego-ph-fIq0tET6llw-unsplash.jpg" alt="card2">
+                    <div class="cards d-flex">
+                        <article class="col mb-3">    
+                            <div class="card">
+                                <img src="../images/henry-ascroft-7OFnb7NOvjw-unsplash.jpg" class="card-img-top" alt="card3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trabajo 1</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sit consequatur corrupti illo quia sequi esse? Expedita eaque, deserunt at aliquid consequuntur blanditiis praesentium, ullam exercitationem quis esse, non atque.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col mb-3">
+                            <div class="card">
+                                <img src="../images/diego-ph-fIq0tET6llw-unsplash.jpg" class="card-img-top" alt="card4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trabajo 2</h5>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione sit consequatur corrupti illo quia sequi esse? Expedita eaque, deserunt at aliquid consequuntur blanditiis praesentium, ullam exercitationem quis esse, non atque.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <h3>Job 2</h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores repudiandae, ullam facilis iure, ad dolorem expedita, ut cupiditate enim ipsa molestias vitae? Sequi inventore doloribus, corrupti ipsa in ratione dignissimos!
-                    </p>
-                </article>
             </section>
         </main>
-        <footer>
-            <h6>Hecho por Michell Zipitría</h6>
+        <footer class="p-5 bg-dark text-light">
+            <p>Hecho por Michell Zipitría</p>
         </footer>
     </body>
 </html>

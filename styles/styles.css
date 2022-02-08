@@ -1,15 +1,18 @@
-main {
-    width: 80vw;
+.navbar-brand > img {
+    height: 30px;
 }
-section {
-    min-height: 75vh;
+main {
+    width: 60vw;
+}
+.card {
+    width: 23rem;
+}
+.card-img-top {
+    height: 18rem;
+    object-fit: cover;
 }
 form {
-    width: 50%;
-}
-
-.navbar-brand > img {
-    max-height: 35px;
+    width: 60%;
 }
 .portada {
     width: 100vw;
@@ -20,4 +23,51 @@ form {
 .titulo {
     width: 45%;
     height: 80%;
+}
+li {
+    background-color: none;
+    transition: background-color 1s;
+}
+li:hover {
+    background-color: rgba(36, 64, 85, 0.639);
+    border-radius: 3px;
+}
+@media (max-width: 540px) {
+    .titulo {
+        width: 75%;
+    }
+    main {
+        width: 100vw;
+    }
+    .card {
+        width: 100%;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    form {
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .titulo {
+        width: 75%;
+    }
+    main {
+        width: 100vw;
+    }
+    .card {
+        width: 80%;
+        margin: auto;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    form {
+        width: 80%;
+        margin: auto;
+    }
+    .navbar a {
+        font-size: 1.5rem;
+    }
 }
