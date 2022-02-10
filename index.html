@@ -3,41 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="../js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <title>Inicio</title>
     </head>
-    <body>
+    <body class="bg-secondary">
         <header class="portada">
-            <nav>
-                <ul>
-                    <li><a href="./index.html">INICIO</a></li>
-                    <li><a href="./html/blog.html">BLOG</a></li>
-                    <li><a href="./html/news.html">NOTICIAS</a></li>
-                    <li><a href="./html/jobs.html">TRABAJOS</a></li>
-                    <li><a href="./html/contact.html">CONTACTO</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+                <div class="container-fluid justify-content-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="index.html" class="nav-link text-light" aria-current="page">INICIO</a></li>
+                            <li class="nav-item"><a href="html/blog.html" class="nav-link text-light">BLOG</a></li>
+                            <li class="nav-item"><a href="html/news.html" class="nav-link text-light">NOTICIAS</a></li>
+                            <li class="nav-item"><a href="html/jobs.html" class="nav-link text-light">TRABAJOS</a></li>
+                            <li class="nav-item"><a href="html/contact.html" class="nav-link text-light">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <div class="titulo">
-                <img src="./images/Logo Michell Zipitría.jpg" alt="logo">
+            <div class="titulo text-light m-auto row align-content-center text-center">
+                <img src="images/logo 1 blanco.png" alt="logo" class="mb-3">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos inventore temporibus similique dolorem labore vitae porro dolor reprehenderit consequuntur, eius impedit magnam error sapiente hic maxime omnis ut, fugiat veritatis?</p>
             </div>
         </header>
-        <section class="principal">
-            <article>
-                <h3>Articulo 1</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, modi suscipit. Modi aut minima vel voluptate officia magni praesentium quisquam nam nisi qui eius harum accusantium libero dolor, dignissimos quaerat.
-                </p>
-            </article>
-            <article>
-                <h3>Articulo 2</h3>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur aperiam, corporis non et quo, voluptatum officia, dignissimos a necessitatibus aliquid doloremque! Dicta asperiores, veniam laboriosam vel quas officiis deserunt?
-                </p>
-            </article>
-        </section>
-        <footer>
-            <h6>Hecho por Michell Zipitría</h6>
+        <main class="m-auto">
+            <section class="bg-white p-5 border-start border-end row">
+                <div class="row">
+                    <article class="mb-5">
+                        <h3>Articulo 1</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, modi suscipit. Modi aut minima vel voluptate officia magni praesentium quisquam nam nisi qui eius harum accusantium libero dolor, dignissimos quaerat.
+                        </p>
+                    </article>
+                    <article class="mb-5">
+                        <h3>Articulo 2</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur aperiam, corporis non et quo, voluptatum officia, dignissimos a necessitatibus aliquid doloremque! Dicta asperiores, veniam laboriosam vel quas officiis deserunt?
+                        </p>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="mb-5">
+                        <h3>Articulo 3</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur aperiam, corporis non et quo, voluptatum officia, dignissimos a necessitatibus aliquid doloremque! Dicta asperiores, veniam laboriosam vel quas officiis deserunt?
+                        </p>
+                    </article>
+                    <article class="mb-5">
+                        <h3>Articulo 4</h3>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur aperiam, corporis non et quo, voluptatum officia, dignissimos a necessitatibus aliquid doloremque! Dicta asperiores, veniam laboriosam vel quas officiis deserunt?
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        <footer class="p-5 bg-dark text-light">
+            <p>Hecho por Michell Zipitría</p>
         </footer>
     </body>
 </html>

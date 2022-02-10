@@ -3,38 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script src="../js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="../styles/styles.css">
         <title>Blog</title>
     </head>
-    <body>
+    <body class="bg-secondary">
         <header>
-            <a href="../index.html" class="logo">
-                <img src="../images/logo MZ.jpg" alt="logo alt">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../html/blog.html">BLOG</a></li>
-                    <li><a href="../html/news.html">NOTICIAS</a></li>
-                    <li><a href="../html/jobs.html">TRABAJOS</a></li>
-                    <li><a href="../html/contact.html">CONTACTO</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <a href="../index.html" class="navbar-brand">
+                        <img src="../images/logo 2 blanco.png" alt="logo 2">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item"><a href="../index.html" class="nav-link text-light">INICIO</a></li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link text-light" aria-current="page">BLOG</a></li>
+                            <li class="nav-item"><a href="news.html" class="nav-link text-light">NOTICIAS</a></li>
+                            <li class="nav-item"><a href="jobs.html" class="nav-link text-light">TRABAJOS</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link text-light">CONTACTO</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
-        <main>
-            <section class="list">
-                <h2>Blog</h2>
-                <article>
+        <main class="m-auto">
+            <section class="bg-white p-5 border-start border-end">
+                <h1 class="text-primary mb-5">Blog</h1>
+                <article class="mb-5">
                     <h3>Post 1</h3>
                     <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit ducimus nobis placeat voluptatem quasi numquam esse, corrupti alias possimus. Ipsam vero corporis eligendi illo eos officia perferendis vel, in pariatur?
                     </p>
+                    <hr>
                 </article>
-                <article>
+                <article class="mb-5">
                     <h3>Post 2</h3>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi laboriosam neque voluptatem, eius dolore, commodi aliquam dicta maiores, beatae architecto quidem delectus qui laborum dignissimos consectetur corporis? Magni, autem optio.
                     </p>
+                    <hr>
                 </article>
                 <article>
                     <h3>Post 3</h3>
@@ -44,8 +55,8 @@
                 </article>
             </section>
         </main>
-        <footer>
-            <h6>Hecho por Michell Zipitría</h6>
+        <footer class="p-5 bg-dark text-light">
+            <p>Hecho por Michell Zipitría</p>
         </footer>
     </body>
 </html>
