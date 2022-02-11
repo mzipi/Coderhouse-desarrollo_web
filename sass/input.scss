@@ -1,0 +1,87 @@
+$color1: rgba(36, 64, 85, 0.639);
+$full-width: 100vw;
+$full-height: 100vh;
+$corners: 3px;
+
+nav {
+    .navbar-brand > img {
+        height: 30px;
+    }
+    li {
+        background-color: none;
+        transition: background-color 1s;
+        &:hover {
+            background-color: $color1;
+            border-radius: $corners;
+        }
+    }
+}
+
+.portada {
+    width: $full-width;
+    height: $full-height;
+    background-image: url("/images/code.jpg");
+    background-size: cover;
+    .titulo {
+        width: 45%;
+        height: 80%;
+    }
+}
+
+main {
+    width: 60vw;
+    .card {
+        width: 23rem;
+        .card-img-top {
+            height: 18rem;
+            object-fit: cover;
+        }
+    }
+    form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 540px) {
+    .titulo {
+        width: 75%;
+    }
+    main {
+        width: $full-width;
+        .cards {
+            flex-direction: column;
+            .card {
+                width: 100%;
+            }
+        }
+        form {
+            width: 100%;
+        }
+    }
+    form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        width: 75%;
+    }
+    main {
+        width: $full-width;
+        .cards {
+            flex-direction: column;
+            .card {
+                width: 80%;
+                margin: auto;
+            }
+        }
+        form {
+            width: 80%;
+            margin: auto;
+        }
+    }
+    .navbar a {
+        font-size: 1.5rem;
+    }
+}
