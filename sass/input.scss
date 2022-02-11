@@ -3,6 +3,16 @@ $full-width: 100vw;
 $full-height: 100vh;
 $corners: 3px;
 
+body {
+    background: $color1;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     .navbar-brand > img {
         height: 30px;
