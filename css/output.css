@@ -1,85 +1,58 @@
 nav .navbar-brand > img {
-  height: 30px;
-}
+  height: 30px; }
+
 nav li {
   background-color: none;
-  transition: background-color 1s;
-}
-nav li:hover {
-  background-color: rgba(36, 64, 85, 0.639);
-  border-radius: 3px;
-}
+  transition: background-color 1s; }
+  nav li:hover {
+    background-color: rgba(36, 64, 85, 0.639);
+    border-radius: 3px; }
 
 .portada {
   width: 100vw;
   height: 100vh;
   background-image: url("/images/code.jpg");
-  background-size: cover;
-}
-.portada .titulo {
-  width: 45%;
-  height: 80%;
-}
+  background-size: cover; }
+  .portada .titulo {
+    width: 45%;
+    height: 80%; }
 
 main {
-  width: 60vw;
-}
-main .card {
-  width: 23rem;
-}
-main .card .card-img-top {
-  height: 18rem;
-  object-fit: cover;
-}
-main form {
-  width: 60%;
-}
+  width: 60vw; }
+  main .card {
+    width: 23rem; }
+    main .card .card-img-top {
+      height: 18rem;
+      object-fit: cover; }
+  main form {
+    width: 60%; }
 
 @media (max-width: 540px) {
   .titulo {
-    width: 75%;
-  }
-
+    width: 75%; }
   main {
-    width: 100vw;
-  }
-  main .cards {
-    flex-direction: column;
-  }
-  main .cards .card {
-    width: 100%;
-  }
-  main form {
-    width: 100%;
-  }
-
+    width: 100vw; }
+    main .cards {
+      flex-direction: column; }
+      main .cards .card {
+        width: 100%; }
+    main form {
+      width: 100%; }
   form {
-    width: 100%;
-  }
-}
+    width: 100%; } }
+
 @media (max-width: 768px) {
   .titulo {
-    width: 75%;
-  }
-
+    width: 75%; }
   main {
-    width: 100vw;
-  }
-  main .cards {
-    flex-direction: column;
-  }
-  main .cards .card {
-    width: 80%;
-    margin: auto;
-  }
-  main form {
-    width: 80%;
-    margin: auto;
-  }
-
+    width: 100vw; }
+    main .cards {
+      flex-direction: column; }
+      main .cards .card {
+        width: 80%;
+        margin: auto; }
+    main form {
+      width: 80%;
+      margin: auto; }
   .navbar a {
-    font-size: 1.5rem;
-  }
-}
-
-/*# sourceMappingURL=output.css.map */
+    font-size: 1.5rem; } }
