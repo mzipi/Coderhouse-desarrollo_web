@@ -1,18 +1,15 @@
 $color1: rgba(36, 64, 85, 0.639);
-$color2: #345670;
 $full-width: 100vw;
 $full-height: 100vh;
 $corners: 3px;
 
-@mixin sizes {
-    width: 50%;
-    min-height: 90Vh;
+@mixin common-styles($color) {
+  width: $full-width;
 }
 
 nav {
-    background-color: $color2;
-    .navbar-brand {
-        padding: 0;
+    .navbar-brand > img {
+        height: 30px;
     }
     li {
         background-color: none;
@@ -25,28 +22,28 @@ nav {
 }
 
 .portada {
+    width: $full-width;
+    max-width: 2543px;
+    height: $full-height;
     background-image: url("../images/code.jpg");
-    min-height: 100vh;
+    background-size: cover;
     .titulo {
-        @include sizes;
+        width: 45%;
+        height: 80%;
     }
 }
 
 main {
+    width: 60vw;
+    min-height: 1080px;
     section {
-        @include sizes;
+        min-height: 1080px;
     }
     .card {
         width: 400px;
     }
     form {
-        @include sizes;
-    }
-}
-
-footer {
-    p {
-        margin: 0;
+        width: 60%;
     }
 }
 
