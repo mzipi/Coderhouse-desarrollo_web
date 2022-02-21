@@ -11,7 +11,8 @@ nav {
 
 .portada {
   background-image: url("../images/code.jpg");
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-size: cover; }
   .portada .titulo {
     width: 50%;
     min-height: 90Vh; }
@@ -31,8 +32,10 @@ footer p {
   margin: 0; }
 
 @media (max-width: 540px) {
-  .titulo {
-    width: 75%; }
+  .portada .titulo {
+    margin: 0px; }
+    .portada .titulo img {
+      width: 200px; }
   main {
     width: 100vw; }
     main .cards {
@@ -41,19 +44,3 @@ footer p {
         width: 100%; }
     main form {
       width: 100%; } }
-
-@media (max-width: 768px) {
-  .titulo {
-    width: 75%; }
-  main {
-    width: 100vw; }
-    main .cards {
-      flex-direction: column; }
-      main .cards .card {
-        width: 80%;
-        margin: auto; }
-    main form {
-      width: 80%;
-      margin: auto; }
-  .navbar a {
-    font-size: 1.5rem; } }
