@@ -9,7 +9,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/output.css">
         <link rel="icon" type="image/x-icon" href="images/favicon.svg">
-        <title>Desarrollo web - Michell Zipitría</title>
+        <title>Desarrollo web</title>
     </head>
     <body>
         <header class="portada">
@@ -29,14 +29,18 @@
                     </div>
                 </div>
             </nav>
-            <div class="titulo text-light m-auto row align-content-center text-center">
-                <img src="images/logo_1_blanco.svg" alt="logo" class="mb-3">
+            <div class="titulo d-flex align-items-center justify-content-center">
+                <picture>
+                    <source media="(min-width:600px) and (max-width: 800px)" srcset="images/logo_1_blanco_600px.svg">
+                    <source media="(min-width:300px) and (max-width: 600px)" srcset="images/logo_1_blanco_300px.svg">
+                    <img src="images/logo_1_blanco.svg" alt="Logo">
+                </picture>
             </div>
         </header>
         <main>
-            <section class="bg-white row m-auto">
-                <div class="row">
-                    <h1>Desarrollo web - Michell Zipitría</h1>
+            <section class="bg-white p-5">
+                <h1>Desarrollo web</h1>
+                <div>
                     <article class="mt-5">
                         <h2>Articulo 1</h2>
                         <p>
@@ -50,7 +54,7 @@
                         </p>
                     </article>
                 </div>
-                <div class="row">
+                <div class="group-hidden">
                     <article class="mt-5">
                         <h2>Articulo 3</h2>
                         <p>

@@ -1,103 +1,136 @@
 $color1: rgba(36, 64, 85, 0.639);
 $color2: #345670;
-$full-width: 100vw;
-$full-height: 100vh;
+$fs-ipad: 1.3rem;
+$fs-iphone: 0.8rem;
+$custom-w: 100vw;
+$custom-h: 100vh;
 $corners: 3px;
 
-@mixin sizes {
-    width: 50%;
-    min-height: 90Vh;
+@mixin margin-padding {
+    padding: 0;
+    margin: 0;
 }
 
-nav {
-    background-color: $color2;
-    .navbar-brand {
-        padding: 0;
+body {
+    @include margin-padding;
+    nav {
+        background-color: $color2;
+        .navbar-brand {
+            @include margin-padding;
+        }
+        li {
+            background-color: none;
+            transition: background-color 1s;
+            &:hover {
+                background-color: $color1;
+                border-radius: $corners;
+            }
+        }
     }
-    li {
-        background-color: none;
-        transition: background-color 1s;
-        &:hover {
-            background-color: $color1;
-            border-radius: $corners;
+    
+    .portada {
+        background-image: url("../images/code.jpg");
+        min-height: $custom-h;
+        background-size: cover;
+        .titulo {
+            height: 80vh;
+        }
+    }
+    
+    main {
+        section {
+            min-height: 82vh;
+            max-width: 1080px;
+            .cards {
+                article {
+                    .card {
+                        margin: auto;
+                        max-width: 400px;
+                    }
+                }
+            }
+            form {
+                max-width: 500px;
+            }
+        }
+    }
+    
+    footer {
+        p {
+            @include margin-padding;
         }
     }
 }
 
-.portada {
-    background-image: url("../images/code.jpg");
-    min-height: 100vh;
-    background-size: cover;
-    .titulo {
-        @include sizes;
-    }
-}
 
-main {
-    section {
-        @include sizes;
-    }
-    .card {
-        width: 400px;
-    }
-    form {
-        @include sizes;
-    }
-}
-
-footer {
-    p {
-        margin: 0;
-    }
-}
-
-@media (max-width: 540px) {
-    .portada {
-        .titulo {
-            margin: 0px;
-            img {
-                width: 200px;
-            }
+@media (min-width:300px) and (max-width: 599px) {
+    header {
+        .navbar a {
+            font-size: $fs-iphone;
         }
     }
     main {
-        width: $full-width;
-        .cards {
-            flex-direction: column;
-            .card {
-                width: 100%;
+        section {
+            width: $custom-w;
+            div {
+                article {
+                    p {
+                        font-size: $fs-iphone;
+                    }
+                }
             }
-        }
-        form {
-            width: 100%;
+            .group-hidden {
+                display: none;
+            }
+            .cards {
+                flex-direction: column;
+                article {
+                    .card {
+                        .card-body {
+                            .card-text {
+                                font-size: $fs-iphone;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                margin: auto;
+                width: 300px;
+            }
         }
     }
 }
 
-// @media (max-width: 768px) {
-//     header {
-//         .navbar a {
-//             font-size: 0.8rem;
-//         }
-//         .titulo {
-//             width: 100%;
-//         }
-//     }
-//     main {
-//         width: $full-width;
-//         section {
-//             width: 100%;
-//         }
-//         .cards {
-//             flex-direction: column;
-//             .card {
-//                 width: 80%;
-//                 margin: auto;
-//             }
-//         }
-//         form {
-//             width: 80%;
-//             margin: auto;
-//         }
-//     }
-// }
+@media (min-width:600px) and (max-width: 800px) {
+    header {
+        .navbar a {
+            font-size: $fs-ipad;
+        }
+        .titulo {
+            width: 100%;
+        }
+    }
+    main {
+        width: $custom-w;
+        section {
+            width: 100%;
+            .cards {
+                flex-direction: column;
+                article {
+                    .card {
+                        .card-body {
+                            .card-text {
+                                font-size: $fs-ipad;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                margin: auto;
+                width: 300px;
+            }
+        }
+    }
+}
