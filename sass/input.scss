@@ -1,0 +1,141 @@
+$color1: rgba(36, 64, 85, 0.639);
+$color2: #345670;
+$fs-ipad: 1.3rem;
+$fs-iphone: 0.8rem;
+$custom-w: 100vw;
+$custom-h: 100vh;
+$corners: 3px;
+
+@mixin margin-padding {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    @include margin-padding;
+    nav {
+        background-color: $color2;
+        .navbar-brand {
+            @include margin-padding;
+        }
+        li {
+            background-color: none;
+            transition: background-color 1s;
+            &:hover {
+                background-color: $color1;
+                border-radius: $corners;
+            }
+        }
+    }
+    
+    .portada {
+        background-image: url("../images/code.jpg");
+        min-height: $custom-h;
+        background-size: cover;
+        .titulo {
+            height: 80vh;
+        }
+    }
+    
+    main {
+        section {
+            min-height: 82vh;
+            max-width: 1920px;
+            margin: auto;
+            
+            .cards {
+                article {
+                    .card {
+                        margin: auto;
+                        max-width: 400px;
+                    }
+                }
+            }
+            form {
+                max-width: 500px;
+            }
+        }
+    }
+    
+    footer {
+        p {
+            @include margin-padding;
+        }
+    }
+}
+
+
+@media (min-width:300px) and (max-width: 599px) {
+    header {
+        .navbar a {
+            font-size: $fs-iphone;
+        }
+    }
+    main {
+        section {
+            width: $custom-w;
+            div {
+                article {
+                    p {
+                        font-size: $fs-iphone;
+                    }
+                }
+            }
+            .group1 {
+                flex-direction: column;
+            }
+            .group-hidden {
+                display: none;
+            }
+            .cards {
+                flex-direction: column;
+                article {
+                    .card {
+                        .card-body {
+                            .card-text {
+                                font-size: $fs-iphone;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                margin: auto;
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width:600px) and (max-width: 800px) {
+    header {
+        .navbar a {
+            font-size: $fs-ipad;
+        }
+        .titulo {
+            width: 100%;
+        }
+    }
+    main {
+        width: $custom-w;
+        section {
+            width: 100%;
+            .cards {
+                flex-direction: column;
+                article {
+                    .card {
+                        .card-body {
+                            .card-text {
+                                font-size: $fs-ipad;
+                            }
+                        }
+                    }
+                }
+            }
+            form {
+                margin: auto;
+                width: 300px;
+            }
+        }
+    }
+}
